@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yinjitixianCellID" rowHeight="151" id="KGk-i7-Jjw" customClass="RGGyinjitixianCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="固定收入" translatesAutoresizingMaskIntoConstraints="NO" id="jF3-zN-cjQ">
+                        <rect key="frame" x="19" y="37" width="59" height="56"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38d-h8-M5L">
+                        <rect key="frame" x="92" y="24" width="64" height="28"/>
+                        <attributedString key="attributedText">
+                            <fragment content="投资额度">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-2s-cm5">
+                        <rect key="frame" x="92" y="54" width="64" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="累计时间">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-zY-gys">
+                        <rect key="frame" x="92" y="83" width="64" height="25"/>
+                        <attributedString key="attributedText">
+                            <fragment content="累计收益">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-Eh-kcj">
+                        <rect key="frame" x="170" y="52" width="76" height="25"/>
+                        <attributedString key="attributedText">
+                            <fragment content="90">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvm-6r-2SL">
+                        <rect key="frame" x="170" y="83" width="106" height="25"/>
+                        <attributedString key="attributedText">
+                            <fragment content="￥">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="90">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O20-cK-0JL">
+                        <rect key="frame" x="254" y="50" width="53" height="30"/>
+                        <color key="backgroundColor" red="0.34027478448275861" green="0.61950431034482756" blue="0.95732758620689651" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="提现">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="tixianBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FFJ-C5-roG"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjT-hA-71E">
+                        <rect key="frame" x="170" y="27" width="106" height="25"/>
+                        <attributedString key="attributedText">
+                            <fragment content="90">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O20-cK-0JL" firstAttribute="leading" secondItem="dS6-Eh-kcj" secondAttribute="trailing" constant="8" id="1nA-cl-TYw"/>
+                    <constraint firstItem="jF3-zN-cjQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="6J7-jd-cto"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mvm-6r-2SL" secondAttribute="trailing" constant="36" id="8op-mJ-3KL"/>
+                    <constraint firstItem="PjT-hA-71E" firstAttribute="leading" secondItem="38d-h8-M5L" secondAttribute="trailing" constant="14" id="CUd-wY-aXB"/>
+                    <constraint firstItem="38d-h8-M5L" firstAttribute="leading" secondItem="jF3-zN-cjQ" secondAttribute="trailing" constant="14" id="Iam-vL-hiP"/>
+                    <constraint firstItem="dS6-Eh-kcj" firstAttribute="leading" secondItem="Mqq-2s-cm5" secondAttribute="trailing" constant="14" id="PvR-cN-TUX"/>
+                    <constraint firstItem="mvm-6r-2SL" firstAttribute="leading" secondItem="76g-zY-gys" secondAttribute="trailing" constant="14" id="S1S-sF-B0T"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jF3-zN-cjQ" secondAttribute="bottom" constant="28" id="XVh-t5-RVE"/>
+                    <constraint firstItem="76g-zY-gys" firstAttribute="leading" secondItem="jF3-zN-cjQ" secondAttribute="trailing" constant="14" id="YD6-gD-pB4"/>
+                    <constraint firstItem="mvm-6r-2SL" firstAttribute="leading" secondItem="76g-zY-gys" secondAttribute="trailing" constant="14" id="aJb-7F-LVw"/>
+                    <constraint firstItem="Mqq-2s-cm5" firstAttribute="leading" secondItem="jF3-zN-cjQ" secondAttribute="trailing" constant="14" id="aPI-vP-EBz"/>
+                    <constraint firstItem="jF3-zN-cjQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="hFu-qx-isj"/>
+                    <constraint firstItem="dS6-Eh-kcj" firstAttribute="leading" secondItem="Mqq-2s-cm5" secondAttribute="trailing" constant="14" id="hxW-6G-iQL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="O20-cK-0JL" secondAttribute="trailing" constant="5" id="l7j-qm-Aja"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PjT-hA-71E" secondAttribute="trailing" constant="36" id="lmt-s4-FuG"/>
+                    <constraint firstItem="PjT-hA-71E" firstAttribute="leading" secondItem="38d-h8-M5L" secondAttribute="trailing" constant="14" id="tLZ-Ug-iRo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leijishijianLable" destination="dS6-Eh-kcj" id="FCM-Sm-0MO"/>
+                <outlet property="leijishouyiLable" destination="mvm-6r-2SL" id="hCn-SV-0Cp"/>
+                <outlet property="tixianBtn" destination="O20-cK-0JL" id="POF-9c-OMc"/>
+                <outlet property="touzieduLabel" destination="PjT-hA-71E" id="f0E-z8-r4q"/>
+                <outlet property="yinjitixianImageView" destination="jF3-zN-cjQ" id="z2I-c5-Lw4"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="164"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="固定收入" width="39" height="37"/>
+    </resources>
+</document>

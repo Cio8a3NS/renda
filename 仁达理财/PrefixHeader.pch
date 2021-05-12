@@ -1,0 +1,63 @@
+//
+//  PrefixHeader.pch
+//  仁达理财
+//
+//  Created by yuanmc on 16/7/25.
+//  Copyright © 2016年 六点科技. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_FRAME [UIScreen mainScreen].bounds
+#define GLOBALCOLOR(r,g,b) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1.0]
+
+#define mycolor GLOBALCOLOR(87, 158, 244)
+#define IOS8 [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+#define getWindow [[UIApplication sharedApplication].delegate window]
+#define ip4 (SCREEN_HEIGHT == 480.0)
+#define ip5 (SCREEN_HEIGHT == 568.0)
+#define ip6 (SCREEN_HEIGHT == 667.0)
+#define ip6p (SCREEN_HEIGHT == 736.0)
+//背景色
+#define BackgroundColor GLOBALCOLOR(247, 249, 250)
+#define WeakSelf __weak __typeof(self) weakSelf = self;
+#define qtime @((NSInteger)[[NSDate date] timeIntervalSince1970])
+#define BaseURL @"http://api.czhsj.com/Api/index.html"
+
+
+#import "HttpTool.h"
+#import "MJExtension.h"
+#import "NSString+Category.h"
+#import "UIKit+AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "MJRefresh.h"
+#import "ReactiveCocoa.h"
+#import "ReactiveCocoa.h"
+#import "FactoryTool.h"
+#import "Masonry.h"
+#import "FJRootViewController.h"
+#import "LoginViewController.h"
+#import "WSProgressHUD.h"
+#import "UIView+Category.h"
+#import "UserInfo.h"
+#import "UIImageView+WebCache.h"
+#import "RootWebViewController.h"
+#define LoginColor [UIColor colorWithWhite:0.173 alpha:1.000]
+
+#define FontOfSize 17
+#define LOAD_IMAGE(image) [UIImage imageNamed:image]
+#define  dividingline    [UIColor colorWithRed:239.0/255.0f green:239.0/255.0f blue:239.0/255.0f alpha:1.0f]
+
+#define screenWidth    [UIScreen mainScreen].bounds.size.width
+#define screenHeight   [UIScreen mainScreen].bounds.size.height
+//取出沙盒中的用户名和密码
+#define myUserid [[NSUserDefaults standardUserDefaults]objectForKey:@"userid"];
+#define myUserName [[NSUserDefaults standardUserDefaults]objectForKey:@"username"];
+#define myPassword [[[NSUserDefaults standardUserDefaults]objectForKey:@"password"] MD5];
+#define myPasswordWithOutMD5 [[NSUserDefaults standardUserDefaults]objectForKey:@"password"];
+
+
+#endif /* PrefixHeader_pch */
