@@ -80,7 +80,6 @@
     btnClicks=btnClick;
     
     myScroll=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,self.bounds.size.width, self.bounds.size.height)];
-    myScroll.backgroundColor = [UIColor redColor];
     myScroll.delegate=self;
     myScroll.pagingEnabled=YES;
     myScroll.contentSize=CGSizeMake(self.bounds.size.width*(array.count+2), 0);

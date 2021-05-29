@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,13 +16,17 @@
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="170" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLH-sw-mi9">
-                        <rect key="frame" x="51" y="77" width="68" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLH-sw-mi9">
+                        <rect key="frame" x="0.0" y="67" width="170" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Awn-RZ-J4S"/>
+                        </constraints>
                         <attributedString key="attributedText">
                             <fragment content="测试测试">
                                 <attributes>
-                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="15" name="PingFangSC-Regular"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
@@ -26,26 +34,28 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="213" translatesAutoresizingMaskIntoConstraints="NO" id="Wwl-6Z-kdH">
-                        <rect key="frame" x="68" y="33" width="35" height="34"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="213" translatesAutoresizingMaskIntoConstraints="NO" id="Wwl-6Z-kdH">
+                        <rect key="frame" x="68" y="23" width="35" height="34"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="35" id="bkc-bK-yFE"/>
                             <constraint firstAttribute="height" constant="34" id="cGl-UR-4vb"/>
                         </constraints>
                     </imageView>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="nLH-sw-mi9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fZh-nj-8e2"/>
+                <constraint firstItem="Wwl-6Z-kdH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="23" id="4Aq-3A-leT"/>
+                <constraint firstItem="nLH-sw-mi9" firstAttribute="top" secondItem="Wwl-6Z-kdH" secondAttribute="bottom" constant="10" id="M0Q-xX-6JA"/>
+                <constraint firstAttribute="trailing" secondItem="nLH-sw-mi9" secondAttribute="trailing" id="Y3B-nM-6Hu"/>
                 <constraint firstItem="Wwl-6Z-kdH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gRG-7B-ymc"/>
+                <constraint firstItem="nLH-sw-mi9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xYG-Be-Obt"/>
             </constraints>
             <size key="customSize" width="170" height="124"/>
             <connections>
                 <outlet property="IconImgView" destination="Wwl-6Z-kdH" id="3Ka-VO-A8F"/>
                 <outlet property="nameLabel" destination="nLH-sw-mi9" id="XFN-lh-XS4"/>
             </connections>
-            <point key="canvasLocation" x="3" y="242"/>
+            <point key="canvasLocation" x="-81" y="8"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -58,8 +58,35 @@
 - (void)setUI{
     
     self.navigationItem.title = @"理财中心";
-    self.tradingArray = @[@{@"numtitle":@"100起投 随时可退（新手理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"1",@"ratio":@"8%",@"newpersontag":@"1"},@{@"numtitle":@"100起投 随时可退（休闲理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"15%",@"newpersontag":@"0"},@{@"numtitle":@"100起投 随时可退（白领理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"22%",@"newpersontag":@"0"},@{@"numtitle":@"100起投 随时可退（自由理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"30%",@"newpersontag":@"0"}];
-    self.tradSecArray = @[@{@"secTitle":@"u计划-A(6天)"},@{@"secTitle":@"u计划-B(10天)"},@{@"secTitle":@"u计划-C(14天)"},@{@"secTitle":@"u计划-D(18天)"}];
+    self.tradingArray = @[
+                          
+                          @{@"numtitle":@"100起投 随时可退（新手理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"1",@"ratio":@"6%",@"newpersontag":@"1"},
+                          
+                          @{@"numtitle":@"100起投 随时可退（新手理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"1",@"ratio":@"8%",@"newpersontag":@"1"},
+                          
+                          @{@"numtitle":@"100起投 随时可退（新手理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"12%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（休闲理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"15%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（休闲理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"18%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（白领理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"22%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（白领理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"27%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（自由理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"30%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（自由理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"35%",@"newpersontag":@"0"},
+                          @{@"numtitle":@"100起投 随时可退（自由理财）",@"contentArray":@[@{@"num":@"100元起投"},@{@"num":@"次日起息，周期收益到账保障"},@{@"num":@"随时加入，次日后随时退出"},@{@"num":@"本息保障机制"}],@"buytag":@"0",@"ratio":@"45%",@"newpersontag":@"0"},
+                          
+                          ];
+    
+    
+    self.tradSecArray = @[
+                          @{@"secTitle":@"u计划-A(3天)"},
+                          @{@"secTitle":@"u计划-B(6天)"},
+                          @{@"secTitle":@"u计划-C(10天)"},
+                          @{@"secTitle":@"u计划-A(11天)"},
+                          @{@"secTitle":@"u计划-C(14天)"},
+                          @{@"secTitle":@"u计划-C(15天)"},
+                          @{@"secTitle":@"u计划-D(20天)"},
+                          @{@"secTitle":@"u计划-D(24天)"},
+                          @{@"secTitle":@"u计划-D(30天)"},
+                          @{@"secTitle":@"u计划-D(18天)"}];
     _tradingModelArray = [RGGTradingModel mj_objectArrayWithKeyValuesArray:self.tradingArray];
     
     [self.view addSubview:self.tradingCenterTableView];
@@ -82,7 +109,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return _tradingModelArray.count;
+    return self.tradSecArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

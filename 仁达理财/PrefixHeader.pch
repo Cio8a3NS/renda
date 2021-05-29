@@ -21,6 +21,7 @@
 #define ip5 (SCREEN_HEIGHT == 568.0)
 #define ip6 (SCREEN_HEIGHT == 667.0)
 #define ip6p (SCREEN_HEIGHT == 736.0)
+#define WIDTH(a)   [UIScreen mainScreen].bounds.size.width*a/375
 //背景色
 #define BackgroundColor GLOBALCOLOR(247, 249, 250)
 #define WeakSelf __weak __typeof(self) weakSelf = self;

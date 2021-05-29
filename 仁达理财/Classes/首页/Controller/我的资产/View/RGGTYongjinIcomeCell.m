@@ -117,6 +117,7 @@
          ;
         LDProgressView *progressView = [[LDProgressView alloc] initWithFrame:CGRectMake(2*margin+25, 70 + i*25 , screenWidth-3*margin-25, 22)];
         UILabel *jiLable = [[UILabel alloc]initWithFrame:CGRectMake(margin, 70 + i*25, 25, 22)];
+        jiLable.font = [UIFont systemFontOfSize:13.0f];
         jiLable.textColor = [UIColor lightGrayColor];
         jiLable.text = [NSString stringWithFormat:@"%d级",i+1];
         progressView.progress = [NSString stringWithFormat:@"%.2lf",yongjinDaiShouyiModel.m.floatValue/totalyongjin].floatValue;

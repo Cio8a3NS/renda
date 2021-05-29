@@ -63,6 +63,25 @@
         case 4:
             self.tianshuImageView.image = [UIImage imageNamed:@"18"];
             break;
+        case 5:
+            self.tianshuImageView.image = [UIImage imageNamed:@"3"];
+            break;
+        case 6:
+            self.tianshuImageView.image = [UIImage imageNamed:@"11"];
+            break;
+        case 7:
+            self.tianshuImageView.image = [UIImage imageNamed:@"15"];
+            break;
+        case 8:
+            self.tianshuImageView.image = [UIImage imageNamed:@"20"];
+            break;
+        case 9:
+            self.tianshuImageView.image = [UIImage imageNamed:@"24"];
+            break;
+        case 10:
+            self.tianshuImageView.image = [UIImage imageNamed:@"30"];
+            break;
+
         default:
             
             break;

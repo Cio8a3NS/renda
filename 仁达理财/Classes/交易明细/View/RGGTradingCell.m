@@ -191,6 +191,24 @@
         case 18:
             _secNum = 4;
             break;
+        case 3:
+            _secNum = 5;
+            break;
+        case 11:
+            _secNum = 6;
+            break;
+        case 15:
+            _secNum = 7;
+            break;
+        case 20:
+            _secNum = 8;
+            break;
+        case 24:
+            _secNum = 9;
+            break;
+        case 30:
+            _secNum = 10;
+            break;
         default:
             break;
     }

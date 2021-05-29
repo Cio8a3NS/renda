@@ -135,7 +135,7 @@
         makeView.hidden = YES;
         makeView.layer.cornerRadius = makeView.frame.size.height / 2.0;
         makeView.clipsToBounds = YES;
-        makeView.backgroundColor = [UIColor redColor];
+//        makeView.backgroundColor = [UIColor redColor];
         [self addSubview:makeView];
         self.makeView = makeView;
         

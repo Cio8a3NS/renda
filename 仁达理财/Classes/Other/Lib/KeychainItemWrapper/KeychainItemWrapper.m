@@ -101,7 +101,7 @@
         genericPasswordQuery = [[NSMutableDictionary alloc] init];
         
         [genericPasswordQuery setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
-        [genericPasswordQuery setObject:identifier forKey:(__bridge id)kSecAttrAccount];
+        [genericPasswordQuery setObject:identifier forKey:(__bridge id)kSecAttrGeneric];
         
         // The keychain access group attribute determines if this item can be shared
         // amongst multiple apps whose code signing entitlements contain the same keychain access group.
@@ -135,7 +135,7 @@
             [self resetKeychainItem];
             
             // Add the generic attribute and the keychain access group.
-            [keychainItemData setObject:identifier forKey:(__bridge id)kSecAttrAccount];
+            [keychainItemData setObject:identifier forKey:(__bridge id)kSecAttrGeneric];
             if (accessGroup != nil)
             {
 #if TARGET_IPHONE_SIMULATOR

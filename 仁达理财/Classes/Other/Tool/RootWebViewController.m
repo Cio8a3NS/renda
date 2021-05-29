@@ -367,11 +367,11 @@
     [alter show];
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
+//- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error{
     
     //nslog(@"%@",error.localizedDescription);
     
-}
+//}
 
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{

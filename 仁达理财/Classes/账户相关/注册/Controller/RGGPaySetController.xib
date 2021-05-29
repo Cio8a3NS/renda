@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RGGPaySetController">
@@ -19,12 +23,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmV-uy-4qV">
-                    <rect key="frame" x="21" y="70" width="279" height="43"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmV-uy-4qV">
+                    <rect key="frame" x="21" y="71" width="279" height="42"/>
                     <attributedString key="attributedText">
                         <fragment content="注册名和银行卡不一致时，将导致您无法提现！">
                             <attributes>
-                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <font key="NSFont" size="15" name="PingFangSC-Regular"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -32,14 +36,20 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9H-jR-pyZ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9H-jR-pyZ">
                     <rect key="frame" x="21" y="126" width="279" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZFQ-f8-Gnq"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-fz-bIP">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-fz-bIP">
                     <rect key="frame" x="21" y="221" width="279" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="q6f-8t-hif"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <userDefinedRuntimeAttributes>
@@ -50,25 +60,25 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                            <color key="value" red="0.92505387931034477" green="0.92874461206896552" blue="0.93790409482758619" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.92505387931034477" green="0.92874461206896552" blue="0.93790409482758619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="请选择银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2K-il-fdS">
-                    <rect key="frame" x="21" y="165" width="279" height="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2K-il-fdS">
+                    <rect key="frame" x="21" y="187" width="279" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-UG-BZl">
-                    <rect key="frame" x="21" y="293" width="279" height="40"/>
-                    <color key="backgroundColor" red="0.53661099137931034" green="0.74983836206896548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-UG-BZl">
+                    <rect key="frame" x="21" y="293" width="279" height="33"/>
+                    <color key="backgroundColor" red="0.53661099137931034" green="0.74983836206896548" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="完成">
                                 <attributes>
-                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="15" name="PingFangSC-Regular"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
@@ -80,20 +90,25 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="w2K-il-fdS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="3B8-4G-Eys"/>
+                <constraint firstItem="Aaf-UG-BZl" firstAttribute="top" secondItem="3ni-fz-bIP" secondAttribute="bottom" constant="32" id="4N1-pD-bfP"/>
                 <constraint firstAttribute="trailing" secondItem="K9H-jR-pyZ" secondAttribute="trailing" constant="20" id="4oE-SZ-LgB"/>
                 <constraint firstAttribute="trailing" secondItem="Aaf-UG-BZl" secondAttribute="trailing" constant="20" id="6Mw-ha-3WU"/>
                 <constraint firstAttribute="trailing" secondItem="YmV-uy-4qV" secondAttribute="trailing" constant="20" id="6S6-bw-YQ2"/>
                 <constraint firstAttribute="trailing" secondItem="w2K-il-fdS" secondAttribute="trailing" constant="20" id="9yD-TZ-9UI"/>
                 <constraint firstAttribute="trailing" secondItem="3ni-fz-bIP" secondAttribute="trailing" constant="20" id="F0T-9f-maI"/>
+                <constraint firstItem="3ni-fz-bIP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="221" id="Q3d-K4-rh1"/>
                 <constraint firstItem="Aaf-UG-BZl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="Qut-9h-MFK"/>
                 <constraint firstItem="YmV-uy-4qV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="SBr-M7-xPH"/>
                 <constraint firstItem="3ni-fz-bIP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="anK-Ja-WPX"/>
                 <constraint firstAttribute="trailing" secondItem="Aaf-UG-BZl" secondAttribute="trailing" constant="20" id="eZ8-cM-nGU"/>
+                <constraint firstItem="K9H-jR-pyZ" firstAttribute="top" secondItem="YmV-uy-4qV" secondAttribute="bottom" constant="13" id="lVg-Yi-Q4O"/>
                 <constraint firstItem="Aaf-UG-BZl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="lVh-0L-5fC"/>
+                <constraint firstItem="3ni-fz-bIP" firstAttribute="top" secondItem="w2K-il-fdS" secondAttribute="bottom" constant="16" id="m3O-fF-nLJ"/>
                 <constraint firstItem="K9H-jR-pyZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="w1E-aP-zZ9"/>
+                <constraint firstItem="3ni-fz-bIP" firstAttribute="top" secondItem="K9H-jR-pyZ" secondAttribute="bottom" constant="55" id="y4M-oB-sgZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="40" y="-73"/>

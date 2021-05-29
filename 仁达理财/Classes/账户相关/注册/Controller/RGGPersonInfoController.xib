@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RGGPersonInfoController">
@@ -17,37 +23,43 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-qB-H86">
-                    <rect key="frame" x="28" y="122" width="68" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-qB-H86">
+                    <rect key="frame" x="28" y="127" width="68" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="微信号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga4-KE-hu8">
-                    <rect key="frame" x="28" y="179" width="68" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga4-KE-hu8">
+                    <rect key="frame" x="28" y="181" width="68" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="T5N-46-nU3"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-g4-2P9">
-                    <rect key="frame" x="104" y="118" width="188" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-g4-2P9">
+                    <rect key="frame" x="104" y="118" width="188" height="31"/>
                     <attributedString key="attributedText"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-Qh-8mq">
-                    <rect key="frame" x="104" y="174" width="188" height="31"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-Qh-8mq">
+                    <rect key="frame" x="104" y="176" width="188" height="29"/>
                     <attributedString key="attributedText"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-0r-hAK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-0r-hAK">
                     <rect key="frame" x="28" y="246" width="264" height="42"/>
-                    <color key="backgroundColor" red="0.53793103448275859" green="0.74711745689655173" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.53793103448275859" green="0.74711745689655173" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Gf7-Mw-7Zj"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="下一步">
                                 <attributes>
-                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="14" name="PingFangSC-Regular"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
@@ -59,16 +71,26 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="ga4-KE-hu8" firstAttribute="centerY" secondItem="HoW-Qh-8mq" secondAttribute="centerY" id="4Hw-Ar-esy"/>
+                <constraint firstItem="dd7-g4-2P9" firstAttribute="firstBaseline" secondItem="nJx-qB-H86" secondAttribute="baseline" id="8yC-Su-vU9"/>
+                <constraint firstItem="dd7-g4-2P9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="118" id="91c-vX-9nm"/>
                 <constraint firstAttribute="trailing" secondItem="HoW-Qh-8mq" secondAttribute="trailing" constant="28" id="AfK-KC-tMX"/>
                 <constraint firstAttribute="trailing" secondItem="gIx-0r-hAK" secondAttribute="trailing" constant="28" id="AwQ-OG-7Yf"/>
+                <constraint firstItem="gIx-0r-hAK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="246" id="EHn-bU-yai"/>
+                <constraint firstItem="ga4-KE-hu8" firstAttribute="baseline" secondItem="HoW-Qh-8mq" secondAttribute="baseline" id="NZt-8Z-X2C"/>
+                <constraint firstItem="ga4-KE-hu8" firstAttribute="trailing" secondItem="nJx-qB-H86" secondAttribute="trailing" id="NgQ-RM-tTd"/>
+                <constraint firstItem="gIx-0r-hAK" firstAttribute="top" secondItem="ga4-KE-hu8" secondAttribute="bottom" constant="46" id="Sye-bk-eEh"/>
                 <constraint firstItem="HoW-Qh-8mq" firstAttribute="leading" secondItem="ga4-KE-hu8" secondAttribute="trailing" constant="8" id="WA5-Gr-m65"/>
                 <constraint firstItem="ga4-KE-hu8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="WhE-jK-XKX"/>
                 <constraint firstAttribute="trailing" secondItem="dd7-g4-2P9" secondAttribute="trailing" constant="28" id="XVp-yA-K6j"/>
                 <constraint firstItem="gIx-0r-hAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="hQE-Tj-Rom"/>
+                <constraint firstItem="HoW-Qh-8mq" firstAttribute="top" secondItem="dd7-g4-2P9" secondAttribute="bottom" constant="27" id="jku-au-cAL"/>
+                <constraint firstItem="gIx-0r-hAK" firstAttribute="top" secondItem="HoW-Qh-8mq" secondAttribute="bottom" constant="41" id="l70-KW-Od7"/>
                 <constraint firstItem="dd7-g4-2P9" firstAttribute="leading" secondItem="nJx-qB-H86" secondAttribute="trailing" constant="8" id="rhl-DA-NMT"/>
                 <constraint firstItem="nJx-qB-H86" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="vb6-nk-lJW"/>
+                <constraint firstItem="ga4-KE-hu8" firstAttribute="top" secondItem="nJx-qB-H86" secondAttribute="bottom" constant="36" id="yAb-e6-CpC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
@@ -76,7 +98,7 @@
                     <integer key="value" value="1"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                    <color key="value" red="0.92702047413793098" green="0.92947198275862064" blue="0.93658405172413794" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="value" red="0.92702047413793098" green="0.92947198275862064" blue="0.93658405172413794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                     <integer key="value" value="5"/>
